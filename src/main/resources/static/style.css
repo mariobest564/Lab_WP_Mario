@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Song List Page Styles */
+.song-list-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Songs Table */
+.song-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.song-list th, .song-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.song-list th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.song-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Song List Page Buttons */
+.song-list a {
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.song-list a:hover {
+    background-color: #45a049;
+}
+
+/* Song Form Page Styles */
+.song-form-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.song-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Error Message Styling */
+.error-message {
+    background-color: #ffdddd;
+    color: #a94442;
+    padding: 15px;
+    border: 1px solid #ebccd1;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}

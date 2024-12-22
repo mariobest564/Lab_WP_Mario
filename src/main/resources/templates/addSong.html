@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Song</title>
+</head>
+<body>
+<form th:method="post" th:action="@{/songs/add}">
+    <label> Title
+        <input type="text" name="title" th:value="(${songToEdit}!=null ? ${songToEdit.getTitle()} : '')">
+    </label>
+    <br>
+    <label> TrackId
+        <input type="text" name="trackId" th:value="(${songToEdit}!=null ? ${songToEdit.getTrackId()} : '')">
+    </label>
+    <br>
+    <label> Genre
+        <input type="text" name="genre" th:value="(${songToEdit}!=null ? ${songToEdit.getGenre()} : '')">
+    </label>
+    <br>
+    <label> Release Year
+        <input type="text" name="releaseYear" th:value="(${songToEdit}!=null ? ${songToEdit.getReleaseYear()} : '')">
+    </label>
+    <br>
+    <label>
+        Choose album
+        <select name="albumId">
+            <option th:each="album:${albums}"
+                    th:value="${album.getId()}">
+                    <th:block th:text="${album.getName()}">
+                    </th:block>
+            </option>
+        </select>
+    </label>
+    <br>
+    <input type="submit">
+</form>
+</body>
+</html>
